@@ -3,7 +3,7 @@ const app = express();
 const ejs = require('ejs');
 
 app.get("/", (req,res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.render('index.ejs');
 })
 
 app.listen(3000, (req,res) =>{
